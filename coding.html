@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Platform 🔐</title>
+  <link rel="stylesheet" href="coding.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+      $(document).ready(function(){
+    $('#icon').click(function(){
+        $('ul').toggleClass('show');
+    })
+})
+  </script>
+</head>
+<body>
+    <section class="coding">
+        <div class="box">
+            <p>num = 56.75 <br> 
+            elem = 895 <br> 
+            overall = num ** elem <br> 
+            print(overall)</p>
+            
+            <p class="nex">products = 5 <br> 
+            costs = 457$ <br> 
+            all = products / costs <br> 
+            print(all)</p>
+        </div>
+        <div class="box2">
+            <h3><spanE>.</spanE><spanF>.</spanF><spanL>.</spanL></h3>
+            
+            <p><spanA>if</spanA> (<spanB>is_undefined</spanB>) { <br>
+             <spanA>return </spanA> <spanC>'undefined'</spanC> <br>
+             } <spanA>else if</spanA> (<spanB>is_an_object</spanB>) { <br> 
+             <spanA>if</spanA> (<spanB>object_is_a_function</spanB>) { <br>     <spanA>return</spanA> <spanC>'function'</spanC> <br> 
+             } <spanA>else</spanA> { <br> 
+             <spanD>//must be an object </spanD><br> 
+             <spanA>return</spanA> <spanC>'object'</spanC> <br>
+               } <br> 
+               }</p>
+        </div>
+        
+        <h1>This website is for learners who love to code, and who is live with coding actions!</h1>
+        <h2>...</h2>
+        <p class="pi">Together we will hack everything with our knowledge and speed 💣</p>
+        
+        <div class="boxes">
+            <div class="box1">
+                <img src="lock.png">
+            </div>
+            <div class="box1">
+                <img src="shield.png">
+            </div>
+            <div class="box1">
+                <img src="bomb.png">
+            </div>
+        </div>
+        
+        <a href="#">Know More</a>
+    </section>
+    
+    
+    
+    
+    <section class="about">
+        <h1>Coding platform...</h1>
+        <img src="data.png">
+        
+        <div class="box6">
+          <div class="wrapper3">
+            <div class="container3">
+              <i class='fas fa-code-branch' style='font-size:20px;color:white'></i>
+              <span class="num" id="value-1" data-val="50500">00</span>
+              <span class="text">Coding users</span>
+            </div>
+            <br>
+            <div class="container4">
+              <i class='far fa-check-circle' style='font-size:20px;color:white'></i>
+              <span class="num" id="value-2" data-val="30040">00</span>
+              <span class="text">Completed</span>
+            </div> 
+            <br>
+            <div class="container5">
+              <i class='far fa-comment' style='font-size:20px;color:white'></i>
+              <span class="num" id="value-4" data-val="15880">00</span>
+              <span class="text">Five Stars</span>
+            </div>
+          </div>
+         
+        </div>
+        <script>
+          let valueDisplays = document.querySelectorAll(".num");
+          let interval = 0;
+    
+          valueDisplays.forEach((valueDisplay) => {
+            let startValue = 5000;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+              startValue += 20;
+              valueDisplay.textContent = startValue;
+              if (startValue == endValue) {
+                clearInterval(counter);
+              }
+            }, duration);
+          });
+        </script>
+        
+        <a id="start" href="#">Let's to learn</a>
+    </section>
+    
+    
+    
+    <section class="more2">
+        <h1>Online learning</h1>
+        <div class="online">
+            <img src="online.png"></div>
+        <p class="onl">Coding platform is good and comfortable way to learn how to code and how to create programs in the future. Inspite of this you will choose type of programming which profession is useful for you, after that you can start learning!!!</p>
+        <a href="courses.html">Online platform</a>
+        
+        <div class="boxm">
+        <div class="boxx">
+            <img src="w3.png">
+        </div>
+        <div class="boxx">
+            <img src="github.png">
+        </div>
+        <div class="boxx">
+            <img src="codepen.svg">
+        </div>
+        </div>
+        <p class="foter">©2022 Coding_ by Khusniddin</p>
+    </section>
+    
+    
+    
+    
+    <nav>
+  <label>
+    <img src="logo1.png">
+    <p>coding<spanA>_</spanA></p>
+  </label>
+  <ul>
+      <li><a href="coding.html">Home</a></li>
+      <li><a href="#">About Coding</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="#">Technology news</a></li>        
+  <li><a href="#">Challenges</a></li>
+  <li><a href="#">Design courses</a></li>
+      <li><a href="#">Contact</a></li>
+      
+  </ul>
+  <label id="icon">
+<div class="navbar" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+  </label>
+  <script>
+function myFunction(x) {
+ x.classList.toggle("change");
+}
+  </script>
+</nav>
+
+<div class="loader">
+        <div class="progress"></div>
+        </div>
+        
+        <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("show")
+            });
+        </script>
